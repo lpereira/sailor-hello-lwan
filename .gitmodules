@@ -1,0 +1,9 @@
+[submodule "3rdparty/remy"]
+	path = 3rdparty/remy
+	url = https://github.com/felipedaragon/remy
+[submodule "3rdparty/lua_at_client"]
+	path = 3rdparty/lua_at_client
+	url = https://github.com/felipedaragon/lua_at_client
+[submodule "3rdparty/sailor"]
+	path = 3rdparty/sailor
+	url = https://github.com/etiene/sailor
