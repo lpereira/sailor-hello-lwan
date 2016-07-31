@@ -24,7 +24,7 @@ Things to fix
 
 Not everything is working in Lwan yet. Some things are easier to fix than others, and all help is welcome. It would be nice to support the following features:
 
-  * Support Friendly URLs. Lwan already supports rewriting requests, but not in a way that's similar to the `rewrite_by_lua_block` directive supported by Nginx;
+  * Support Friendly URLs. Lwan already support rewriting requests using Lua functions; it's just the matter of adapting the set up in `nginx.conf` to `lwan.conf`;
   * Cookie support (for sessions, etc) is working, but currently requires minor changes inside Sailor. Ideally these abstractions should go to Remy;
   * Only GET requests are supported.  Lwan supports POST as well, but the Remy shim only reports that the request is a GET request through its `method` member in the `request` table;
   * The `hostname`, `useragent_ip`, and `port` fields in the Remy object are hardcoded to `localhost`, `127.0.0.1`, and `8080` respectively.  In fact, most constants in the `request` table are wrong.  This table should have a metatable and fetch the necessary fields on demand;
